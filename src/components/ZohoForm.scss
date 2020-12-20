@@ -1,0 +1,44 @@
+.form-container {
+  background-color: $light;
+  width: 100%;
+}
+
+.form-input {
+  background-color: transparent;
+  border-width: 0px 0px 1px 0px;
+  border-color: $primary;
+}
+
+.hidden {
+  display: none;
+}
+
+tr td:nth-child(1) {
+  width: 40%;
+}
+
+tr td:nth-child(2) {
+  width: 40%;
+}
+
+tr td:nth-child(3) {
+  width: 20%;
+}
+
+.tooltip-trigger {
+  position: relative;
+  background-color: $primary;
+}
+
+.tooltip-trigger:hover + .tooltip-content {
+  display: block;
+}
+
+.tooltip-content {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  background-color: $light;
+  padding: 10px;
+  z-index: 10;
+}

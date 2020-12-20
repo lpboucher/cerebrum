@@ -1,0 +1,29 @@
+.light-logo {
+  filter: brightness(0) invert(1);
+  max-width: 100px;
+  padding: 1.1em 0 !important;
+}
+
+.mid-font {
+  font-size: 14px;
+}
+
+.footer-link {
+  .nav-item {
+    width: 50%;
+    text-align: left;
+  }
+
+  .nav-link {
+    color: $light !important;
+    font-size: 12px;
+
+    &.active {
+      color: $success !important;
+    }
+  
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}

@@ -1,0 +1,200 @@
+// bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+/* Global styling for this template */
+body {
+  overflow-x: hidden;
+  @include body-font;
+  max-width: 100vw !important;
+}
+
+#___gatsby {
+  max-width: 100vw !important;
+  overflow-x: hidden;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+.cursor-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $success;
+  text-shadow: none;
+}
+
+::selection {
+  background: $success;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}
+
+/* Components */
+// Button Styles
+.btn {
+  @include heading-font;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  }
+}
+
+.btn-rounded {
+  border-radius: 2rem !important;
+}
+
+.container {
+  max-width: none;
+  padding: 0 35px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.spaced {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.custom-spaced {
+  padding: 68px 15px;
+}
+
+/* Components */
+// Chat widget Styles
+.olivo {
+  .rcw-widget-container {
+    &::before {
+      content: "Ask Harry for a live quote.";
+      font-size: 12px;
+      animation: shake 8.2s cubic-bezier(.36,.07,.19,.97) 3s infinite both;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+    .rcw-conversation-container {
+      .rcw-header {
+        background-color: $warning !important;
+
+        .rcw-title {
+          width: 100%;
+          background: url('../../content/assets/hedglogo_white.png');
+          background-repeat:no-repeat;
+          background-size: contain;
+          background-position: center;
+          filter: none;
+        }
+      }
+
+      .rcw-messages-container {
+        .rcw-message {
+          .rcw-avatar {
+            filter: invert(1);
+          }
+          .quick-button {
+            border-color: $warning !important;
+          }
+          .rcw-client {
+            background-color: $warning !important;
+          }
+        }
+      }
+    }
+
+    .rcw-launcher {
+      background-color: $warning !important;
+      background: url('../../content/assets/Harry.png');
+      background-repeat:no-repeat;
+      background-size: 50% 50%;
+      background-position: center;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .rcw-widget-container.rcw-opened {
+    &::before {
+      display: none;
+    }
+    .rcw-launcher {
+      background-color: $warning !important;
+      background: none;
+      background-repeat:no-repeat;
+      background-size: 50% 50%;
+      background-position: center;
+
+      img {
+        display: inline;
+      }
+    }
+  }
+}
+
+@keyframes shake {
+  1%, 9% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  2%, 8% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  3%, 5%, 7% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  4%, 6% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

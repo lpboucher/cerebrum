@@ -1,0 +1,14 @@
+.section-header {
+  h2.section-heading {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  h3.section-subheading {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    text-transform: none;
+    @include serif-font;
+  }
+}
