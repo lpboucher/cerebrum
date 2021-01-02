@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import PageSection from "components/PageSection";
 import SectionHeader from "components/SectionHeader";
-import Image from "components/Image";
+import Underline from "components/Underline"
 
 import "./Contact.scss";
 
@@ -66,12 +66,10 @@ const Contact = ({ className, frontmatter }) => {
     <PageSection className={className} id={anchorId}>
       <Row>
         <SectionHeader header={header} subheader={subheader} />
+        <Underline color="success" />
       </Row>
       <Row className="contact align-items-center justify-content-center">
-        <Col md={6} sm={12} className="text-center">
-          <Image className="image" fileName={imageFileName} />
-        </Col>
-        <Col md={6} sm={12}>
+        <Col md={8}>
           <Form
             name="contact"
             data-netlify="true"
@@ -119,7 +117,7 @@ const Contact = ({ className, frontmatter }) => {
                 {message}
               </Form.Text>
             }
-            <Button type="submit" size="xl" variant="secondary" className="btn-rounded font-weight-bold">{cta}</Button>
+            <Button type="submit" size="xl" variant="success" className="btn-rounded font-weight-bold">{cta}</Button>
           </Form>
         </Col>
       </Row>

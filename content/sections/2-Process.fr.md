@@ -1,23 +1,10 @@
 ---
 isActive: true
-anchor: "Comment nous travaillons"
+anchor: "Our Process"
 anchorId: "process"
-inNavbar: true
+inNavbar: false
 inFooter: true
-header: "Un processus simple adapté à vos besoins"
-subheader: ""
-steps: [
-  {
-    title: "Contact Initial",
-    content: "Contact initial avec le client potentiel par téléphone pour prendre rendez-vous pour la réunion d’introduction/découverte/enquête",
-  },
-  {
-    title: "Réunion de découverte",
-    content: "Une rencontre face à face, par Zoom, ou appel téléphonique pour identifier les objectifs et besoins du client en discutant de la situation financière de toute la famille.",
-  },
-  {
-    title: "Recommendations",
-    content: "Nous élaborons une recommandation personnalisée, mettons en œuvre un plan et remplissons les demandes de comptes d’assurances et d’investissements proposées.",
-  },
-]
+header: "Our Process"
+content: "With each factor affecting the other, our approach entails a fully comprehensive strategy focusing on open communication between all 4 Pillars to ensure a tailored plan for every individual."
+imageFileName: "Process.svg"
 ---

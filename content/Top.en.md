@@ -1,9 +1,9 @@
 ---
-header: "A tailored solution to your mortgage insurance."
-subheader: "We believe everyone is different, therefore your financial plan should be built around you and your family’s goals and dreams. Protecting our clients' financial future is our #1 priority."
-imageFileName: "HeroImage.svg"
-jumpToAnchor: "services"
-jumpToAnchorText: "Get started"
-referCta: "Refer Us"
-appointmentCta: "Book an appointment"
+header: "We efficiently improve and maintain the system that we define as your "
+highlight: "Mental Fitness"
+subheader: "For feelings of Anxiety, Stress, Burnout, Depression and/or any inclination to improve your general well-being. It’s time."
+imageFileName: "Brain.svg"
+jumpToAnchor: "contact"
+jumpToAnchorText: "Our Concept"
+contactCta: "Contact Us"
 ---

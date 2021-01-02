@@ -12,10 +12,10 @@ const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo }) => {
       <Container>
         <Row className="align-items-center">
           <Col md={6} sm={12} className="pt-5 px-0 justify-content-around">
-            <h1 className="pb-5 font-weight-bold text-primary">{header}</h1>
             <p className="pb-5">
               {subheader}
             </p>
+            {header}
             {extraInfo}
           </Col>
           <Col md={6} sm={12} className="text-center py-5">

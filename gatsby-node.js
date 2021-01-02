@@ -63,7 +63,6 @@ exports.createSchemaCustomization = ({ actions }) => {
  */
 exports.createPages = ({ graphql, actions: { createPage } }) => {
   const topIndex = path.resolve("./src/templates/top-index.jsx");
-  const referIndex = path.resolve("./src/templates/refer.jsx");
 
   return new Promise((resolve, reject) => {
     resolve(
@@ -85,15 +84,6 @@ exports.createPages = ({ graphql, actions: { createPage } }) => {
           createPage({
             path: getBaseUrl(defaultLang, langKey),
             component: topIndex,
-            context: {
-              langKey,
-              defaultLang,
-              langTextMap,
-            },
-          });
-          createPage({
-            path: `${getBaseUrl(defaultLang, langKey)}refer`,
-            component: referIndex,
             context: {
               langKey,
               defaultLang,

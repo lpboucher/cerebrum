@@ -1,0 +1,21 @@
+.stat-box {
+    background-color: lightgrey;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.stat-text {
+    border-top-right-radius: 60px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.stat-number {
+    p {
+        margin: 0;
+        font-size: 48px;
+        font-weight: bold;
+    }
+}

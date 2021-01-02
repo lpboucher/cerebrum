@@ -3,25 +3,27 @@ import PropTypes from "prop-types";
 
 import Jumbotron from "components/Jumbotron";
 import ScrollToButton from "components/ScrollToButton";
+import Highlight from "components/Highlight";
 
 const Top = ({ frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
 
-  const { header, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const { header, highlight, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const fullHeader = <h1 className="pb-5 font-weight-bold text-primary">{header}<Highlight text={highlight}/>.</h1>
 
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <ScrollToButton size="xl" jumpToAnchor={jumpToAnchor} jumpToAnchorText={jumpToAnchorText} color="success" />
+      <ScrollToButton size="xl" jumpToAnchor={jumpToAnchor} jumpToAnchorText={jumpToAnchorText} color="danger" />
     );
   }
 
   return (
     <Jumbotron
       imageFileName={imageFileName}
-      header={header}
+      header={fullHeader}
       subheader={subheader}
       extraInfo={extraInfoPart}
     />

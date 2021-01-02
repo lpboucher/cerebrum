@@ -11,7 +11,7 @@ const ScrollToButton = ({ jumpToAnchor, jumpToAnchorText, color, size, spaced, t
   const buttonAction = jumpToAnchor ? useSmoothScrollTo(jumpToAnchor) : () => navigate(target);
   // className={clsx("dropdown-item", { active: key === langKey })}
   return (
-    <Button size={size} variant={color} color="white" className={clsx("px-3 mr-1 text-white btn-rounded font-weight-bold", { "spaced": spaced })} onClick={buttonAction}>
+    <Button size={size} variant={color} color="primary" className={clsx("px-3 mr-1 text-primary btn-rounded font-weight-bold", { "spaced": spaced })} onClick={buttonAction}>
       {jumpToAnchorText}
     </Button>
   );

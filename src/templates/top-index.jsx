@@ -16,7 +16,6 @@ import fileNameToSectionName from "utils/fileNameToSectionName";
 import getBaseUrl from "utils/getBaseUrl";
 
 import "../style/main.scss";
-import "../style/olivo.css";
 
 /**
  * get file name list from content/sections folder
@@ -42,6 +41,7 @@ export const query = graphql`
           brandLogo
           brandName
           closer
+          contactCta
           content
           copyright
           cta
@@ -53,22 +53,30 @@ export const query = graphql`
           }
           email
           explainer
+          footer
           header
+          highlight
           imageFileName
           inNavbar
           inFooter
           isActive
           jumpToAnchor
           jumpToAnchorText
+          main
           menuText
           name
           number
-          partners {
-            logo
-            name
-          }
           phone
           referCta
+          sections {
+              header
+              imageFileName
+              stats {
+                  number
+                  explanation
+              }
+          }
+          sectionFooter
           services {
             content
             header
@@ -83,14 +91,13 @@ export const query = graphql`
             medium
             twitter
           }
-          steps {
-            title
-            content
-          }
           subheader
           subheaderFocus
-          testimonials {
-            content
+          team {
+              imageFileName
+              name
+              role
+              description
           }
           title
         }
@@ -120,25 +127,10 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
     langSelectorPart = (
       <>
         <LanguageSelector langKey={langKey} defaultLang={defaultLang} langTextMap={langTextMap} />
-        <ScrollToButton spaced target={`${getBaseUrl(defaultLang, langKey)}refer`} jumpToAnchorText={topNode.frontmatter.referCta} color="primary" />
-        <ScrollToButton spaced jumpToAnchor="contact" jumpToAnchorText={topNode.frontmatter.appointmentCta} color="success" />
+        <ScrollToButton spaced jumpToAnchor="contact" jumpToAnchorText={topNode.frontmatter.contactCta} color="success" />
       </>
     );
   }
-
-  useEffect(() => {
-    /* const olivoDiv = document.createElement("div");
-    olivoDiv.id = "widget";
-    const olivoScript = document.createElement("script");
-    olivoScript.type = 'text/javascript';
-    olivoScript.src = "/chat-widget/main.js"
-    document.body.appendChild(olivoDiv);
-    document.body.appendChild(olivoScript); */
-    const zohoScript = document.createElement("script");
-    zohoScript.type = 'text/javascript';
-    zohoScript.src = "/zoho.js"
-    document.body.appendChild(zohoScript);
-  }, []);
 
   return (
     <>

@@ -11,7 +11,7 @@ const SectionHeader = ({ header, subheader, className, ...restProps }) => {
   ) : null;
 
   return (
-    <Col lg={12} className={clsx("section-header", "text-center", className)} {...restProps}>
+    <Col lg={12} className={clsx("section-header", className)} {...restProps}>
       <h2 className="section-heading">{header}</h2>
       {subheaderPart}
     </Col>

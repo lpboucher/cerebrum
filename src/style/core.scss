@@ -31,8 +31,10 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #0a264c !default;
 
-$primary: #0a264c !default;
-$secondary: #4281a4 !default;
-$success: #87bba2 !default;
-$warning: #c37247 !default;
-$light: #f2f2f2 !default;
+// background is light, text is primary
+$primary: #58585b !default;
+$secondary: #c6e9f7 !default;
+$success: #d2e3cf !default;
+$warning: #fce89b !default;
+$danger: #f3cec5 !default;
+$light: #f4f3f1 !default;

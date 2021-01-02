@@ -2,10 +2,16 @@
 @import "~bootstrap/scss/bootstrap";
 
 /* Global styling for this template */
+html {
+    height: 100%;
+}
+
 body {
   overflow-x: hidden;
   @include body-font;
   max-width: 100vw !important;
+  color: $primary;
+  height: 100%;
 }
 
 #___gatsby {
@@ -106,95 +112,3 @@ img::-moz-selection {
 }
 
 /* Components */
-// Chat widget Styles
-.olivo {
-  .rcw-widget-container {
-    &::before {
-      content: "Ask Harry for a live quote.";
-      font-size: 12px;
-      animation: shake 8.2s cubic-bezier(.36,.07,.19,.97) 3s infinite both;
-      transform: translate3d(0, 0, 0);
-      backface-visibility: hidden;
-      perspective: 1000px;
-
-      @media (max-width: 500px) {
-        display: none;
-      }
-    }
-    .rcw-conversation-container {
-      .rcw-header {
-        background-color: $warning !important;
-
-        .rcw-title {
-          width: 100%;
-          background: url('../../content/assets/hedglogo_white.png');
-          background-repeat:no-repeat;
-          background-size: contain;
-          background-position: center;
-          filter: none;
-        }
-      }
-
-      .rcw-messages-container {
-        .rcw-message {
-          .rcw-avatar {
-            filter: invert(1);
-          }
-          .quick-button {
-            border-color: $warning !important;
-          }
-          .rcw-client {
-            background-color: $warning !important;
-          }
-        }
-      }
-    }
-
-    .rcw-launcher {
-      background-color: $warning !important;
-      background: url('../../content/assets/Harry.png');
-      background-repeat:no-repeat;
-      background-size: 50% 50%;
-      background-position: center;
-
-      img {
-        display: none;
-      }
-    }
-  }
-
-  .rcw-widget-container.rcw-opened {
-    &::before {
-      display: none;
-    }
-    .rcw-launcher {
-      background-color: $warning !important;
-      background: none;
-      background-repeat:no-repeat;
-      background-size: 50% 50%;
-      background-position: center;
-
-      img {
-        display: inline;
-      }
-    }
-  }
-}
-
-@keyframes shake {
-  1%, 9% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  2%, 8% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  3%, 5%, 7% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  4%, 6% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
