@@ -7,13 +7,10 @@
   .form-group.col {
     padding: 0;
     width: 80%;
+    margin: auto;
 
     @media (max-width: 900px) {
       width: 100%;
     }
   }
-}
-
-.form-label {
-  font-family: "Montserrat";
 }

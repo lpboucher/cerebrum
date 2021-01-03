@@ -58,6 +58,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
+          "Nunito\: 400,700",
           "Montserrat\:400,700",
           "Kaushan+Script",
           "Droid+Serif\:400,700,400i,700i",

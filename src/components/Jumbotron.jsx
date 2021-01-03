@@ -19,7 +19,7 @@ const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo }) => {
             {extraInfo}
           </Col>
           <Col md={6} sm={12} className="text-center py-5">
-            <Image className="image" fileName={imageFileName} alt={imageAlt || header || subheader} />
+            <Image className="image p-3" fileName={imageFileName} alt={subheader} />
           </Col>
         </Row>
       </Container>
@@ -30,7 +30,7 @@ const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo }) => {
 Jumbo.propTypes = {
   imageFileName: PropTypes.string,
   imageAlt: PropTypes.string,
-  header: PropTypes.string,
+  header: PropTypes.object,
   subheader: PropTypes.string,
   extraInfo: PropTypes.any,
 };
@@ -38,7 +38,7 @@ Jumbo.propTypes = {
 Jumbo.defaultProps = {
   imageFileName: null,
   imageAlt: null,
-  header: "",
+  header: null,
   subheader: "",
   extraInfo: null,
 };

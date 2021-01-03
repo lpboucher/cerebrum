@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
@@ -13,7 +13,6 @@ import ScrollToButton from "components/ScrollToButton";
 import "utils/fixFontAwesome";
 import breakDownAllNodes from "utils/breakDownAllNodes";
 import fileNameToSectionName from "utils/fileNameToSectionName";
-import getBaseUrl from "utils/getBaseUrl";
 
 import "../style/main.scss";
 
@@ -34,25 +33,15 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
-          address
           anchor
           anchorId
-          appointmentCta
           brandLogo
           brandName
-          closer
           contactCta
           content
           copyright
           cta
-          cta1
-          cta2
-          descriptions {
-            label
-            image
-          }
           email
-          explainer
           footer
           header
           highlight
@@ -66,8 +55,6 @@ export const query = graphql`
           menuText
           name
           number
-          phone
-          referCta
           sections {
               header
               imageFileName
@@ -77,22 +64,7 @@ export const query = graphql`
               }
           }
           sectionFooter
-          services {
-            content
-            header
-            iconName
-            imageFileName
-          }
-          slogan
-          social {
-            facebook
-            github
-            linkedin
-            medium
-            twitter
-          }
           subheader
-          subheaderFocus
           team {
               imageFileName
               name
@@ -134,7 +106,7 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Hedg" keywords={keywords} description={description} />
+      <SEO lang={langKey} title="Cerebrum" keywords={keywords} description={description} />
       <Navbar
         anchors={navAnchors}
         frontmatter={navBarNode.frontmatter}

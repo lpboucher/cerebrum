@@ -35,24 +35,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       anchor: String
       jumpToAnchor: String
       jumpToAnchorText: String
-      social: Social
-      services: [Service]
     }`,
-    `type Service {
-      iconName: String
-      imageFileName: String
-      header: String
-      content: String
-    }`,
-    `
-    type Social {
-      twitter: String
-      facebook: String
-      linkedin: String
-      medium: String
-      github: String
-    }
-    `,
   ];
 
   createTypes(typeDefs);

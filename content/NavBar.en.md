@@ -1,5 +1,5 @@
 ---
 brandLogo: "Logo.svg"
-brandName: "Hedg Financial"
+brandName: "Cerebrum"
 menuText: "Menu "
 ---

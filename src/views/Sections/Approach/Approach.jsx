@@ -19,14 +19,14 @@ const Approach = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchorId}>
       <Row>
-          <Col>
+          <Col lg={{span: 6, order: 1}} md={{span: 12, order: 2}} sm={{span: 12, order: 2}} xs={{span: 12, order: 2}} className="d-flex align-items-center justify-content-center">
             <Image className="image" fileName={imageFileName} />
           </Col>
-          <Col>
+          <Col lg={{span: 6, order: 2}} md={{span: 12, order: 1}} sm={{span: 12, order: 1}} xs={{span: 12, order: 1}}>
             <SectionHeader header={rootHeader} subheader={rootSubHeader} />
             <Underline color="success" />
-            {main.map((item) => <p>{item}</p>)}
-            <h4>{footer[0]} <Highlight text={highlight} bg="secondary"/> {footer[1]}.</h4>
+            {main.map((item, index) => <p key={`content-${index}`} className="text-regular">{item}</p>)}
+            <h4 className="text-midsize">{footer[0]} <Highlight text={highlight} bg="secondary"/> {footer[1]}.</h4>
           </Col>
       </Row>
     </PageSection>

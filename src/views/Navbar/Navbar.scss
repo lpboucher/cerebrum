@@ -13,9 +13,9 @@ nav.navbar {
     right: 0;
     padding: 13px;
     text-transform: uppercase;
-    color: white !important;
+    color: $primary !important;
     border: 0;
-    background-color: $primary;
+    background-color: transparent;
     @include heading-font;
   }
   .navbar-brand {
@@ -27,9 +27,6 @@ nav.navbar {
     &:hover {
       color: darken($primary, 10%);
     }
-  }
-  .navbar-collapse {
-    background-color: $light;
   }
 }
 @media (min-width: 992px) {
@@ -66,13 +63,13 @@ nav.navbar {
   }
 
   .logo-root {
-    width: 140px;
+    width: 120px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
 
   .logo-shrink {
-    width: 120px;
+    width: 80px;
   }
 }

@@ -1,29 +1,35 @@
 ---
 isActive: true
-anchor: "Qu’est-ce qu’une assurance hypothécaire?"
-anchorId: "what-is"
+anchor: "Our Team"
+anchorId: "team"
 inNavbar: false
 inFooter: true
-header: "Qu’est-ce qu’une assurance hypothécaire?"
-subheader: "Souvent qualifiée d'«assurance hypothécaire» par les banques et autres institutions financières, elle peut souvent être mal interprétée."
-subheaderFocus: "Les solutions d’assurance hypothécaire que nous offrons vous appartiennent personnellement."
-descriptions: [
+header: "Our team of experts"
+subheader: "Our team of experts are here for you."
+team: [
   {
-    label: "Vous êtes propriétaire du contrat (pas la banque)",
-    image: "step1whatis.svg",
+    imageFileName: "step1whatis.svg",
+    name: "Veronique Lagarde",
+    role: "Nutritionist",
+    description: "Of Canadians who report having a mental health care need, one third state that their needs were not fully met."
   },
   {
-    label: "Vous choisissez les bénéficiaires (vos proches, pas la banque)",
-    image: "step2whatis.svg",
+    imageFileName: "step1whatis.svg",
+    name: "Louis-Philippe Boucher",
+    role: "Psychotherapist",
+    description: "Of Canadians who report having a mental health care need, one third state that their needs were not fully met."
   },
   {
-    label: "Vous choisissez les modalités et la prestation (non liés à l'hypothèque ou l’institution financière)",
-    image: "step3whatis.svg",
+    imageFileName: "step1whatis.svg",
+    name: "Nicolas Ishak",
+    role: "Sleep Specialist",
+    description: "Of Canadians who report having a mental health care need, one third state that their needs were not fully met."
   },
   {
-    label: "Le prix et le montant de la prestation choisi sont fixes pour les termes qui conviennent à votre famille",
-    image: "step4whatis.svg",
+    imageFileName: "step1whatis.svg",
+    name: "Louis-Philippe Boucher",
+    role: "Kinesiologist",
+    description: "Of Canadians who report having a mental health care need, one third state that their needs were not fully met."
   },
 ]
-closer: "Indépendant de votre hypothèque, l’objectif de cette assurance est de couvrir votre hypothèque. Nous allons au-delà de cela avec notre approche holistique à la planification de la sécurité financière. Nous examinons l’ensemble de votre situation financière personnelle et d’entreprise pour nous assurer que nous vous recommandons le montant d’assurance approprié pour vous et vos proches."
 ---

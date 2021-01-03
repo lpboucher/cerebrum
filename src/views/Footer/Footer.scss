@@ -1,6 +1,6 @@
 .light-logo {
-  filter: brightness(0) invert(1);
-  max-width: 100px;
+  // filter: brightness(0) invert(1);
+  max-width: 120px;
   padding: 1.1em 0 !important;
 }
 
@@ -10,20 +10,22 @@
 
 .footer-link {
   .nav-item {
-    width: 50%;
+    width: 100%;
     text-align: left;
   }
 
   .nav-link {
-    color: $light !important;
+    color: $primary !important;
     font-size: 12px;
 
     &.active {
       color: $success !important;
+      filter: brightness(80%);
     }
   
     &:hover {
-      color: $secondary !important;
+        color: $success !important;
+        filter: brightness(80%);
     }
   }
 }

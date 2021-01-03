@@ -12,7 +12,7 @@ const TeamMember = ({ imageFileName, name, role, description, reverse, step }) =
     const align = reverse ? "text-right" : "text-left";
   return (
     <Row className="align-items-center justify-content-center my-4 w-100">
-        <Col md={8} className={`${order} ${align} member-info member-${step} p-4`}>
+        <Col md={8} className={`${order} ${align} member-info member-${step} p-5`}>
             <h3>{name}</h3>
             <h5>{role}</h5>
             <p>{description}</p>

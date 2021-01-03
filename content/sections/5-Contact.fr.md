@@ -1,13 +1,12 @@
 ---
 isActive: true
-anchor: "Prenez rendez-vous"
+anchor: "Contact Us"
 anchorId: "contact"
 inNavbar: false
 inFooter: true
-header: "Prenez rendez-vous avec l’un de nos conseillers"
-name: "Prénom et Nom:"
-number: "Numéro de téléphone:"
-email: "Courriel:"
-cta: "Soumettre"
-imageFileName: "Calendar.svg"
+header: "Get in touch with us"
+name: "First Name & Last Name:"
+number: "Phone number:"
+email: "Email address:"
+cta: "Submit"
 ---

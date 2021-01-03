@@ -27,6 +27,22 @@ p {
   color: $primary !important;
 }
 
+.text-regular {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.text-midsize {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.text-large {
+    font-size: 2.2rem;
+}
+
 h1,
 h2,
 h3,

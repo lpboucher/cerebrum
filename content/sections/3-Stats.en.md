@@ -3,7 +3,7 @@ isActive: true
 anchor: "You and Me & Mental Health"
 anchorId: "mental"
 inNavbar: false
-inFooter: true
+inFooter: false
 header: "You and Me & Mental Health"
 sections: [
     {

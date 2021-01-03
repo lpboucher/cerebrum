@@ -60,16 +60,16 @@ const Contact = ({ className, frontmatter }) => {
     }
   };
 
-  const { anchorId, header, subheader, imageFileName, name, number, cta, email } = frontmatter;
+  const { anchorId, header, subheader, name, number, cta, email } = frontmatter;
 
   return (
     <PageSection className={className} id={anchorId}>
-      <Row>
-        <SectionHeader header={header} subheader={subheader} />
+      <Row className="align-items-center justify-content-center">
+        <SectionHeader header={header} subheader={subheader} centered/>
         <Underline color="success" />
       </Row>
       <Row className="contact align-items-center justify-content-center">
-        <Col md={8}>
+        <Col md={8} className="text-center">
           <Form
             name="contact"
             data-netlify="true"

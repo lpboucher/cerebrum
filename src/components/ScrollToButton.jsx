@@ -6,18 +6,19 @@ import clsx from "clsx";
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import { Button } from "react-bootstrap";
 
-const ScrollToButton = ({ jumpToAnchor, jumpToAnchorText, color, size, spaced, target }) => {
+const ScrollToButton = ({ className, jumpToAnchor, jumpToAnchorText, color, size, spaced, target }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const buttonAction = jumpToAnchor ? useSmoothScrollTo(jumpToAnchor) : () => navigate(target);
   // className={clsx("dropdown-item", { active: key === langKey })}
   return (
-    <Button size={size} variant={color} color="primary" className={clsx("px-3 mr-1 text-primary btn-rounded font-weight-bold", { "spaced": spaced })} onClick={buttonAction}>
+    <Button size={size} variant={color} color="primary" className={clsx("px-3 mr-1 text-primary btn-rounded font-weight-bold", { "spaced": spaced }, className)} onClick={buttonAction}>
       {jumpToAnchorText}
     </Button>
   );
 };
 
 ScrollToButton.propTypes = {
+  className: PropTypes.string,
   jumpToAnchor: PropTypes.string,
   jumpToAnchorText: PropTypes.string.isRequired,
   color: PropTypes.string,
@@ -27,6 +28,7 @@ ScrollToButton.propTypes = {
 };
 
 ScrollToButton.defaultProps = {
+  className: null,
   color: "success",
   size: "md",
   spaced: false,

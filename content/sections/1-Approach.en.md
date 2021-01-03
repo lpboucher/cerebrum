@@ -10,7 +10,7 @@ main:
     - "With the collaborative and comprehensive work of our dedicated professionals in the fields of nutrition, physical activity, sleep and psychotherapy, we converge to one common goal: Efficiently improve and maintain the system that we define as your Mental Fitness."
 footer:
     - "This is why we’ve developed the 4 Pillar Approach which, we believe, encompasses the major factors to help with your"
-    - "nutrition, physical activity, sleep and psychotherapy."
+    - "nutrition, physical activity, sleep and psychotherapy"
 highlight: "Mental Fitness:"
 imageFileName: "Approach.svg"
 ---

@@ -20,17 +20,19 @@ const Team = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchorId}>
       <Row className="team">
-        <Col className="text-center">
-          <SectionHeader header={rootHeader} />
+        <Col className="d-flex flex-column align-items-center justify-content-center">
+          <SectionHeader header={rootHeader} centered/>
           <Underline color="danger" />
-          <h3 className="section-subheading">{rootSubHeader}</h3>
+          <h3 className="text-regular section-subheading">{rootSubHeader}</h3>
         </Col>
       </Row>
       <Row className="team">
+        <Col className="px-5">
         {team.map((member, index) =>
           // eslint-disable-next-line react/no-array-index-key
-          <TeamMember key={`team-${index}`} step={index + 1} reverse={index % 2 === 1} {...member} />
+            <TeamMember key={`team-${index}`} step={index + 1} reverse={index % 2 === 1} {...member} />
         )}
+        </Col>
       </Row>
     </PageSection>
   );

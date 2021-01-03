@@ -7,7 +7,7 @@ import Image from "components/Image";
 
 import "./Footer.scss";
 
-const Footer = ({ location, anchors, frontmatter }) => {
+const Footer = ({ anchors, frontmatter }) => {
   if (!frontmatter) {
     return null;
   }
@@ -15,35 +15,25 @@ const Footer = ({ location, anchors, frontmatter }) => {
   const {
     brandLogo,
     brandName,
-    slogan,
-    address,
-    phone,
     copyright,
   } = frontmatter;
 
   return (
-    <footer className="bg-primary text-white footer py-5">
+    <footer className="bg-light text-white footer py-3">
       <Container>
-        <Row className="text-center">
-          <Col md={6} sm={12} className="order-md-1 order-sm-2 d-flex flex-column justify-content-between text-lg-left">
+        <Row className="align-items-center justify-content-center">
+          <Col md={3} sm={12} className="order-md-1 order-sm-2 d-flex flex-column justify-content-between text-lg-left">
             <div>
               <Image className="light-logo" fileName={brandLogo} alt={brandName} />
-              <p className="small">{slogan}</p>
             </div>
-            <div>
-              <p className="mb-0 mid-font">{address}</p>
-              <p className="mb-0 mid-font">{phone}</p>
-            </div>
-            <p className="mt-3 small">{copyright}</p>
           </Col>
-          <Col md={5} sm={12} className="order-md-2 order-sm-1 my-3 my-lg-0">
-            {location !== "/refer" &&
-              <Nav className="footer-link text-uppercase ml-auto">
+          <Col md={9} sm={12} className="order-md-2 order-sm-1 my-3 my-lg-0">
+            <Nav className="footer-link text-uppercase ml-auto">
                 {anchors.map(({ anchor, id }) => (
-                  <NavItem key={id} to={id}>{anchor}</NavItem>
+                    <NavItem key={id} to={id}>{anchor}</NavItem>
                 ))}
-              </Nav>
-            }
+            </Nav>
+            <p className="text-primary mt-3 small">{copyright}</p>
           </Col>
         </Row>
       </Container>

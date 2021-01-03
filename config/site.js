@@ -1,11 +1,11 @@
 module.exports = {
-  title: "Hedg Financial",
+  title: "Cerebrum",
   keywords: [
-    "mortgage",
-    "insurance",
-    "mortgage insurance"
+    "mental health",
+    "well-being",
+    "wellness"
   ],
-  description: "Landing page site of Hedg Financial",
+  description: "Landing page site of Cerebrum",
   author: "LB Technologies",
   // this is the google analytics tracking id
   trackingId: "UA-119418003-5",

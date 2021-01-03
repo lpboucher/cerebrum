@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
@@ -19,10 +19,10 @@ const Process = ({ className, frontmatter }) => {
 
   return (
     <PageSection className={className} id={anchorId}>
-      <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+      <Row className="align-items-center justify-content-center">
+        <SectionHeader header={rootHeader} subheader={rootSubHeader} centered />
         <Underline color="warning" />
-        <p>{content}</p>
+        <p className="text-regular text-center mx-lg-5 px-lg-5">{content}</p>
         <Image className="image" fileName={imageFileName} />
       </Row>
     </PageSection>

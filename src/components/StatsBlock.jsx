@@ -9,18 +9,19 @@ import StatsItem from "components/StatsItem";
 import "./StatsBlock.scss";
 
 const StatsBlock = ({ reverse, header, imageFileName, stats }) => {
-    const order = reverse ? "order-last" : "order-first";
-  return (
-      <Row className="align-items-center justify-content-center my-4">
-          <Col className={`${order} text-center`}>
-            <h3>{header}</h3>
-            {stats.map(oneStat => <StatsItem {...oneStat} />)}
-          </Col>
-          <Col className={`text-center`}>
-            <Image className="stats-image" fileName={imageFileName} />
-          </Col>
-      </Row>
-  )
+    const order = reverse ? "last" : "first";
+    const blockSize = stats.length;
+    return (
+        <Row className="align-items-center justify-content-center my-5">
+            <Col lg={{span: 6, order: order}} md={{span: 12, order: 2}}>
+                <h3 className="text-midsize">{header}</h3>
+                {stats.map(oneStat => <StatsItem key={`stat: ${oneStat.number}`} {...oneStat} />)}
+            </Col>
+            <Col lg={{span: 6, order: 1}} md={{span: 12, order: 2}} className={`text-center pt-md-0 pt-sm-3 pt-3`}>
+                <Image className={`stats-image stats-image-${blockSize}`} fileName={imageFileName} />
+            </Col>
+        </Row>
+    )
 };
 
 StatsBlock.propTypes = {

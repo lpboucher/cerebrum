@@ -1,9 +1,9 @@
 ---
-header: "Une solution sur mesure pour votre assurance hypothécaire."
-subheader: "Nous croyons que tout le monde est différent. Par conséquent, votre plan financier doit être construit autour de vous et des objectifs et des rêves de votre famille. Protéger l'avenir financier de nos clients est notre priorité n° 1."
-imageFileName: "HeroImage.svg"
-jumpToAnchor: "services"
-jumpToAnchorText: "Commencez"
-referCta: "Nous Référer"
-appointmentCta: "Prenez Rendez-vous"
+header: "We efficiently improve and maintain the system that we define as your "
+highlight: "Mental Fitness"
+subheader: "For feelings of Anxiety, Stress, Burnout, Depression and/or any inclination to improve your general well-being. It’s time."
+imageFileName: "Brain.svg"
+jumpToAnchor: "contact"
+jumpToAnchorText: "Our Concept"
+contactCta: "Contact Us"
 ---

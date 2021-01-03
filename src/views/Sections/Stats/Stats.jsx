@@ -21,15 +21,15 @@ const Stats = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchorId}>
       <Row>
-        <Col className="stats text-center">
-          <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <Col className="stats d-flex flex-column align-items-center justify-content-center">
+          <SectionHeader header={rootHeader} subheader={rootSubHeader} centered />
           <Underline color="secondary" />
         </Col>
       </Row>
-      {sections.map((oneSection, index) => <StatsBlock reverse={index % 2 === 1} {...oneSection} />)}
-      <Row>
-          <Col>
-            <h4>{sectionFooter} <Highlight text={highlight} bg="danger"/>.</h4>
+      {sections.map((oneSection, index) => <StatsBlock key={`block-${index}`} reverse={index % 2 === 1} {...oneSection} />)}
+      <Row className="mt-5">
+          <Col className="pt-4">
+            <h4 className="text-midsize text-center px-lg-5 mx-lg-5">{sectionFooter} <Highlight text={highlight} bg="danger"/>.</h4>
           </Col>
       </Row>
     </PageSection>
@@ -39,15 +39,17 @@ const Stats = ({ className, frontmatter }) => {
 Stats.propTypes = {
   className: PropTypes.string,
   frontmatter: PropTypes.object,
-  sections: PropTypes.arrayOf(PropTypes.object).isRequired,
-  sectionFooter: PropTypes.string.isRequired,
+  sections: PropTypes.arrayOf(PropTypes.object),
+  sectionFooter: PropTypes.string,
   highlight: PropTypes.string,
 };
 
 Stats.defaultProps = {
   className: null,
   frontmatter: null,
-  highlight: "Mental Fitness."
+  highlight: "Mental Fitness.",
+  sectionFooter: "",
+  sections: []
 };
 
 export default Stats;
