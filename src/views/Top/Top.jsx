@@ -13,12 +13,12 @@ const Top = ({ frontmatter }) => {
   }
 
   const { header, highlight, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
-  const fullHeader = <h1 className="pb-5 font-weight-bold text-primary text-large">{header}<Highlight text={highlight}/>.</h1>
+  const fullHeader = <h1 className="pb-4 font-weight-bold text-primary text-large">{header}<Highlight text={highlight}/>.</h1>
 
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
     extraInfoPart = (
-      <ScrollToButton className="jumbo-btn" size="xl" jumpToAnchor={jumpToAnchor} jumpToAnchorText={jumpToAnchorText} color="danger" />
+      <ScrollToButton className="mt-3 jumbo-btn" size="xl" jumpToAnchor={jumpToAnchor} jumpToAnchorText={jumpToAnchorText} color="danger" />
     );
   }
 

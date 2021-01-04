@@ -22,12 +22,12 @@ const Footer = ({ anchors, frontmatter }) => {
     <footer className="bg-light text-white footer py-3">
       <Container>
         <Row className="align-items-center justify-content-center">
-          <Col md={3} sm={12} className="order-md-1 order-sm-2 d-flex flex-column justify-content-between text-lg-left">
+          <Col md={3} sm={3} xs={3} className="d-flex flex-column justify-content-between text-lg-left">
             <div>
               <Image className="light-logo" fileName={brandLogo} alt={brandName} />
             </div>
           </Col>
-          <Col md={9} sm={12} className="order-md-2 order-sm-1 my-3 my-lg-0">
+          <Col md={9} sm={9} xs={9} className="my-3 my-lg-0">
             <Nav className="footer-link text-uppercase ml-auto">
                 {anchors.map(({ anchor, id }) => (
                     <NavItem key={id} to={id}>{anchor}</NavItem>
