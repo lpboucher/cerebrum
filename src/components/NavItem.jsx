@@ -10,7 +10,7 @@ const NavItem = ({ to, onClick, children }) => {
   return (
     <Nav.Item>
       <Link
-        className="nav-link cursor-pointer ml-2"
+        className="nav-link cursor-pointer ml-4"
         activeClass="active"
         to={to}
         spy
