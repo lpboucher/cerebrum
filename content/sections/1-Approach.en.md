@@ -12,5 +12,5 @@ footer:
     - "This is why we’ve developed the 4 Pillar Approach which, we believe, encompasses the major factors to help with your"
     - "nutrition, physical activity, sleep and psychotherapy"
 highlight: "Mental Fitness:"
-imageFileName: "Approach.svg"
+imageFileName: "Approach_EN.svg"
 ---

@@ -1,4 +1,4 @@
 ---
-copyright: "© 2021 Cerebrum. All right reserved."
-brandLogo: "Logo.svg"
+copyright: "© 2021 Cerebrum. Tous droits réservés."
+brandLogo: "CerebrumLogo_FR.svg"
 ---

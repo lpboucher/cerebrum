@@ -12,8 +12,8 @@ const Top = ({ frontmatter }) => {
     return null;
   }
 
-  const { header, highlight, subheader, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
-  const fullHeader = <h1 className="pb-4 font-weight-bold text-primary text-large">{header}<Highlight text={highlight}/>.</h1>
+  const { header, highlight, subheader, additional, imageFileName, jumpToAnchor, jumpToAnchorText } = frontmatter;
+  const fullHeader = <h1 className="mb-3 pb-4 font-weight-bold text-primary text-large">{header}<Highlight text={highlight}/>.</h1>
 
   let extraInfoPart;
   if (jumpToAnchor && jumpToAnchorText) {
@@ -28,6 +28,7 @@ const Top = ({ frontmatter }) => {
       header={fullHeader}
       subheader={subheader}
       extraInfo={extraInfoPart}
+      additional={additional}
     />
   );
 };

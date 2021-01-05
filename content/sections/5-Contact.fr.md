@@ -1,12 +1,12 @@
 ---
 isActive: true
-anchor: "Contact Us"
+anchor: "Contactez-Nous"
 anchorId: "contact"
 inNavbar: false
 inFooter: true
-header: "Get in touch with us"
-name: "First Name & Last Name:"
-number: "Phone number:"
-email: "Email address:"
-cta: "Submit"
+header: "Contactez-Nous"
+name: "Prénom & Nom:"
+number: "Numéro de téléphone:"
+email: "Addresse courriel:"
+cta: "Soumettre"
 ---

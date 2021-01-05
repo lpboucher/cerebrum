@@ -1,10 +1,10 @@
 ---
 isActive: true
-anchor: "Our Team"
+anchor: "Notre équipe"
 anchorId: "team"
 inNavbar: false
 inFooter: true
-header: "Our team of experts"
+header: "Notre équipe d'experts"
 subheader: "Our team of experts are here for you."
 team: [
   {

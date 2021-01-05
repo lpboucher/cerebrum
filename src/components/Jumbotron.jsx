@@ -6,7 +6,7 @@ import Image from "components/Image";
 
 import "./Jumbotron.scss";
 
-const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo }) => {
+const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo, additional }) => {
   return (
     <Jumbotron fluid className="px-3 bg-light">
       <Container>
@@ -16,10 +16,13 @@ const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo }) => {
               {subheader}
             </p>
             {header}
+            <p className="pb-4">
+              {additional}
+            </p>
             {extraInfo}
           </Col>
           <Col md={6} sm={12} className="text-center py-5">
-            <Image className="image p-3" fileName={imageFileName} alt={subheader} />
+            <Image className="image p-5" fileName={imageFileName} alt={subheader} />
           </Col>
         </Row>
       </Container>

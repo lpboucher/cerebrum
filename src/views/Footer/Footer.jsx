@@ -27,7 +27,7 @@ const Footer = ({ anchors, frontmatter }) => {
               <Image className="light-logo" fileName={brandLogo} alt={brandName} />
             </div>
           </Col>
-          <Col md={9} sm={9} xs={9} className="my-3 my-lg-0">
+          <Col md={9} sm={9} xs={9} className="pt-3 my-3 my-lg-0">
             <Nav className="footer-link text-uppercase ml-auto">
                 {anchors.map(({ anchor, id }) => (
                     <NavItem key={id} to={id}>{anchor}</NavItem>

@@ -1,10 +1,10 @@
 ---
 isActive: true
-anchor: "Our Process"
+anchor: "Notre Processus"
 anchorId: "process"
 inNavbar: false
 inFooter: false
-header: "Our Process"
-content: "With each factor affecting the other, our approach entails a fully comprehensive strategy focusing on open communication between all 4 Pillars to ensure a tailored plan for every individual."
-imageFileName: "Process.svg"
+header: "Notre Processus"
+content: "Chaque facteur ayant une incidence sur les autres, cette approche implique une stratégie globale axée sur une communication ouverte entre les 4 piliers afin de garantir un plan adapté à chaque individu."
+imageFileName: "Process_FR.svg"
 ---

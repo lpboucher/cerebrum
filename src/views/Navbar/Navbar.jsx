@@ -17,7 +17,7 @@ import { defaultLang } from "../../../config/site";
 import "./Navbar.scss";
 
 const MyNavbar = ({ language, location, anchors, frontmatter, extraItems }) => {
-  const { brandLogo, brandName, menuText } = frontmatter;
+  const { brandLogo, brandName } = frontmatter;
 
   const handleScrollToTop = useSmoothScrollTo(0);
 
@@ -40,7 +40,7 @@ const MyNavbar = ({ language, location, anchors, frontmatter, extraItems }) => {
   const [shrink, setShrink] = React.useState(false);
   const handleWindowScroll = React.useCallback(() => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    setShrink(scrollTop > 100);
+    setShrink(scrollTop > 80);
   }, []);
   useWindowOnScroll(handleWindowScroll);
 
@@ -56,7 +56,6 @@ const MyNavbar = ({ language, location, anchors, frontmatter, extraItems }) => {
           <Image className={clsx("p-0 logo-root", { "logo-shrink": shrink })} fileName={brandLogo} alt={brandName} />
         </Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-label="Toggle navigation">
-          {menuText}
           <Icon iconName="BarsIcon" />
         </Navbar.Toggle>
         <Navbar.Collapse>

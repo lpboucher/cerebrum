@@ -1,5 +1,4 @@
 ---
-brandLogo: "Logo.svg"
+brandLogo: "CerebrumLogo_EN.svg"
 brandName: "Cerebrum"
-menuText: "Menu "
 ---

@@ -33,6 +33,7 @@ export const query = graphql`
     ) {
       nodes {
         frontmatter {
+          additional
           anchor
           anchorId
           brandLogo
@@ -52,7 +53,6 @@ export const query = graphql`
           jumpToAnchor
           jumpToAnchorText
           main
-          menuText
           name
           number
           sections {
@@ -61,6 +61,7 @@ export const query = graphql`
               stats {
                   number
                   explanation
+                  link
               }
           }
           sectionFooter

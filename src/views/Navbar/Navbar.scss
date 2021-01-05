@@ -4,7 +4,17 @@ nav.navbar {
 
   .container {
     padding: 1rem;
+
+    .navbar-collapse {
+        background-color: $light;
+    }
   }
+}
+
+nav.navbar.navbar-shrink {
+    .container {
+        background-color: $light;
+    }
 }
 
 .navbar-root {
@@ -27,6 +37,10 @@ nav.navbar {
     &:hover {
       color: darken($primary, 10%);
     }
+
+    .logo-root {
+        width: 60px;
+      }
   }
 }
 @media (min-width: 992px) {
@@ -47,6 +61,17 @@ nav.navbar {
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+
+      .logo-root {
+        width: 120px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+    
+      .logo-shrink {
+        width: 60px;
+      }
     }
     &.navbar-shrink {
       .container {
@@ -60,16 +85,5 @@ nav.navbar {
         padding: 12px 0;
       }
     }
-  }
-
-  .logo-root {
-    width: 120px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-
-  .logo-shrink {
-    width: 80px;
   }
 }

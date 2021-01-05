@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 
 import "./StatsItem.scss";
 
-const StatsItem = ({ number, explanation }) => {
+const StatsItem = ({ number, explanation, link }) => {
   return (
       <Row className="my-3">
           <Col md={4} sm={4} xs={4}>
@@ -14,9 +14,9 @@ const StatsItem = ({ number, explanation }) => {
             </div>
           </Col>
           <Col md={8} sm={8} xs={8}>
-            <div className="d-flex align-items-center justify-content-center stat-box stat-text p-4">
+            <a href={link} target="_blank" className="d-flex align-items-center justify-content-center stat-box stat-text p-4">
                 <p>{explanation}</p>
-            </div>
+            </a>
           </Col>
       </Row>
   )
@@ -24,7 +24,8 @@ const StatsItem = ({ number, explanation }) => {
 
 StatsItem.propTypes = {
     number: PropTypes.string.isRequired,
-    explanation: PropTypes.string.isRequired
+    explanation: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
 };
 
 export default StatsItem;

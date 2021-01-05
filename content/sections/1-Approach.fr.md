@@ -1,16 +1,16 @@
 ---
 isActive: true
-anchor: "Our Approach"
+anchor: "Notre approche"
 anchorId: "approach"
 inNavbar: false
 inFooter: true
-header: Our Approach
+header: Notre approche
 main:
-    - "We all know that in order to stay in physical shape we need regular activity. If you want to optimize the results, you need to have good eating and sleeping habits. The brain is no different. Life is constantly throwing obstacles for which we need to assess and react, and if we’re not mentally fit, then we don’t give ourselves the best tools at hand."
-    - "With the collaborative and comprehensive work of our dedicated professionals in the fields of nutrition, physical activity, sleep and psychotherapy, we converge to one common goal: Efficiently improve and maintain the system that we define as your Mental Fitness."
+    - "C’est clair que pour rester en forme, l'activité physique régulière est essentiel. Par contre, si vous voulez optimiser les résultats, vous devez avoir un bon régime alimentaire et des bonnes habitudes de sommeil. Le cerveau suit le même concept. La vie nous confronte constamment à des obstacles que nous devons évaluer et auxquels nous devons réagir, et si nous ne sommes pas dans un état mental optimal, nous n’avons pas accès aux meilleurs outils à notre disposition."
+    - "Grâce au travail collaborateur et exhaustif de nos professionnels dévoués dans les domaines de la nutrition, de l'activité physique, du sommeil et de la psychothérapie, nous convergeons vers un objectif commun: l’amélioration et le maintien de ce que nous appelons votre Vitalité Mentale."
 footer:
-    - "This is why we’ve developed the 4 Pillar Approach which, we believe, encompasses the major factors to help with your"
-    - "nutrition, physical activity, sleep and psychotherapy"
-highlight: "Mental Fitness:"
-imageFileName: "Approach.svg"
+    - "C'est pourquoi nous avons développé l'approche des 4 Piliers qui, selon nous, englobe les principaux facteurs vous permettant d’atteindre une bonne "
+    - "la nutrition, l'activité physique, le sommeil et la psychothérapie"
+highlight: "Santé Mentale:"
+imageFileName: "Approach_FR.svg"
 ---
