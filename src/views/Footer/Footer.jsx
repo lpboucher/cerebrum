@@ -33,7 +33,7 @@ const Footer = ({ anchors, frontmatter }) => {
                     <NavItem key={id} to={id}>{anchor}</NavItem>
                 ))}
             </Nav>
-            <p className="text-primary mt-3 small">{copyright}</p>
+            <p className="text-primary mt-3 ml-5 small">{copyright}</p>
           </Col>
         </Row>
       </Container>

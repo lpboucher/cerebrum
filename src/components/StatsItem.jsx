@@ -14,8 +14,13 @@ const StatsItem = ({ number, explanation, link }) => {
             </div>
           </Col>
           <Col md={8} sm={8} xs={8}>
-            <a href={link} target="_blank" className="d-flex align-items-center justify-content-center stat-box stat-text p-4">
-                <p>{explanation}</p>
+            <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="d-flex align-items-center justify-content-center stat-box stat-text p-4"
+            >
+                <p dangerouslySetInnerHTML={{ __html: explanation}} />
             </a>
           </Col>
       </Row>

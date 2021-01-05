@@ -12,7 +12,7 @@ sections: [
         stats: [
             {
                 number: "2x",
-                explanation: "Recent study shows that diagnosed anxiety disorder doubled from 2011 to 2018.",
+                explanation: "Recent study shows that diagnosed <strong>anxiety disorder doubled</strong> from 2011 to 2018.",
                 link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7214527/"
             }
         ]
@@ -23,17 +23,17 @@ sections: [
         stats: [
             {
                 number: "1/5",
-                explanation: "1 in 5 Canadians will personally experience a mental health problem or illness in any given year.",
+                explanation: "<strong>1 in 5 Canadians</strong> will personally experience a mental health problem or illness in any given year.",
                 link: "https://www.mentalhealthcommission.ca/sites/default/files/2016-06/Investing_in_Mental_Health_FINAL_Version_ENG.pdf"
             },
             {
                 number: "#1",
-                explanation: "Depression alone is the leading cause of disability worldwide.",
+                explanation: "Depression alone is the <strong>leading cause of disability worldwide</strong>.",
                 link: "https://www.who.int/news-room/fact-sheets/detail/depression"
             },
             {
                 number: "50%",
-                explanation: "About 50% of the population will have or will have had a mental illness by the age of 40.",
+                explanation: "About <strong>50% of the population</strong> will have or will have had a mental illness by the age of 40.",
                 link: "https://www.mentalhealthcommission.ca/sites/default/files/2016- 06/Investing_in_Mental_Health_FINAL_Version_ENG.pdf"
             }
         ]
@@ -44,7 +44,7 @@ sections: [
         stats: [
             {
                 number: "1/3",
-                explanation: "Of Canadians who report having a mental health care need, 1/3 state that their needs were not fully met.",
+                explanation: "Of Canadians who report having a mental health care need, <strong>1/3 state that their needs were not fully met</strong>.",
                 link: "https://www.camh.ca/en/driving-change/the-crisis-is-real/mental-health-statistics"
             }
         ]
