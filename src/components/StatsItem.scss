@@ -1,3 +1,12 @@
+#mental {
+    .stat-bubble {
+        @media (max-width: 576px) {
+            padding-right: 2px;
+            padding-left: 2px;
+        }
+    }
+}
+
 .stat-box {
     background-color: $light;
     height: 100%;
