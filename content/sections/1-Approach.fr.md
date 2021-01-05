@@ -2,7 +2,7 @@
 isActive: true
 anchor: "Notre approche"
 anchorId: "approach"
-inNavbar: false
+inNavbar: true
 inFooter: true
 header: Notre approche
 main:
