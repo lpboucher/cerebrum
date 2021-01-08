@@ -19,7 +19,7 @@ const Footer = ({ anchors, frontmatter }) => {
   } = frontmatter;
 
   return (
-    <footer className="bg-light text-white footer py-3">
+    <footer className="text-white footer py-3">
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col md={3} sm={3} xs={3} className="d-flex flex-column justify-content-between text-lg-left">
