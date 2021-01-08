@@ -1,5 +1,5 @@
 ---
-isActive: true
+isActive: false
 anchor: "Our Team"
 anchorId: "team"
 inNavbar: false

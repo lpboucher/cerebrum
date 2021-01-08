@@ -5,6 +5,7 @@ import clsx from "clsx";
 
 import useSmoothScrollTo from "hooks/useSmoothScrollTo";
 import { Button } from "react-bootstrap";
+import "./ScrollToButton.scss";
 
 const ScrollToButton = ({ className, jumpToAnchor, jumpToAnchorText, color, size, spaced, target }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

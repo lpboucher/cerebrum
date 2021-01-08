@@ -8,7 +8,7 @@ import "./Jumbotron.scss";
 
 const Jumbo = ({ imageFileName, imageAlt, header, subheader, extraInfo, additional }) => {
   return (
-    <Jumbotron fluid className="px-3 bg-light">
+    <Jumbotron fluid className="px-3 bg-light" id="jumbo">
       <Container>
         <Row className="align-items-center">
           <Col md={6} sm={12} className="pt-5 px-0 justify-content-around">

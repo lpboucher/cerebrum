@@ -5,6 +5,8 @@ subheader: "Pour les symptômes liés à l’anxiété, au stress, épuisement p
 additional: "Alimenté par votre nutrition, renforcé par votre activité physique, soutenu par votre sommeil et saisi par votre psychothérapie, votre état mental est au cœur de notre entreprise."
 imageFileName: "Brain.svg"
 jumpToAnchor: "approach"
-jumpToAnchorText: "Notre concept"
+jumpToAnchorText: "Notre Approche"
+jumpToAnchor2: "process"
+jumpToAnchorText2: "Notre Processus"
 contactCta: "Contactez-nous"
 ---

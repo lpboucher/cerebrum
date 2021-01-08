@@ -1,10 +1,10 @@
 ---
 isActive: true
-anchor: "You and Me & Mental Health"
+anchor: "You, Me and Mental Health"
 anchorId: "mental"
 inNavbar: false
 inFooter: false
-header: "You and Me & Mental Health"
+header: "You, Me and Mental Health"
 sections: [
     {
         header: "At first, the issue was about raising awareness...",

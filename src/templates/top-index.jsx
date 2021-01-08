@@ -52,6 +52,8 @@ export const query = graphql`
           isActive
           jumpToAnchor
           jumpToAnchorText
+          jumpToAnchor2
+          jumpToAnchorText2
           main
           name
           number
@@ -131,6 +133,12 @@ const IndexPage = ({ data, pathContext: { langKey, defaultLang, langTextMap } })
           ) : null;
         })
       }
+      <ScrollToButton 
+        className="floating"
+        jumpToAnchor="jumbo"
+        jumpToAnchorText="&#8593;"
+        color="success"
+      />
       <Footer anchors={footAnchors} frontmatter={footerNode.frontmatter} />
     </>
   );
