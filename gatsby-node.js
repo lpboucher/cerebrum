@@ -44,8 +44,11 @@ exports.createSchemaCustomization = ({ actions }) => {
 /**
  * generate i18n top pages
  */
-exports.createPages = ({ graphql, actions: { createPage } }) => {
+exports.createPages = ({ graphql, actions: { createPage, createRedirect } }) => {
   const topIndex = path.resolve("./src/templates/top-index.jsx");
+
+  createRedirect({ fromPath: 'http://joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
 
   return new Promise((resolve, reject) => {
     resolve(
