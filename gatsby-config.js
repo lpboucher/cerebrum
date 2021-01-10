@@ -74,5 +74,6 @@ module.exports = {
         pagesPaths: ["/content/"],
       },
     },
+    `gatsby-plugin-netlify`
   ],
 };
