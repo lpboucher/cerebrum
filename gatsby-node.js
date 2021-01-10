@@ -40,7 +40,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   createTypes(typeDefs);
 };
-
+joincerebrum.ca A 104.198.14.52
 /**
  * generate i18n top pages
  */
@@ -49,6 +49,8 @@ exports.createPages = ({ graphql, actions: { createPage, createRedirect } }) => 
 
   createRedirect({ fromPath: 'http://joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
   createRedirect({ fromPath: 'https://joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'http://www.joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
+  createRedirect({ fromPath: 'https://www.joincerebrum.ca/*', toPath: 'https://joincerebrum.com/:splat', isPermanent: true, force: true })
 
   return new Promise((resolve, reject) => {
     resolve(
