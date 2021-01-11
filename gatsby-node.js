@@ -40,7 +40,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
   createTypes(typeDefs);
 };
-joincerebrum.ca A 104.198.14.52
+
 /**
  * generate i18n top pages
  */

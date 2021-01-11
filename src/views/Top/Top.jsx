@@ -20,7 +20,7 @@ const Top = ({ frontmatter }) => {
     extraInfoPart = (
         <>
             <ScrollToButton className="mt-3 jumbo-btn" size="xl" jumpToAnchor={jumpToAnchor} jumpToAnchorText={jumpToAnchorText} color="danger" />
-            <ScrollToButton className="mt-3 ml-3 jumbo-btn" size="xl" jumpToAnchor={jumpToAnchor2} jumpToAnchorText={jumpToAnchorText2} color="warning" />
+            <ScrollToButton className="mt-3 ml-3 jumbo-btn variable-mgn" size="xl" jumpToAnchor={jumpToAnchor2} jumpToAnchorText={jumpToAnchorText2} color="warning" />
         </>
     );
   }

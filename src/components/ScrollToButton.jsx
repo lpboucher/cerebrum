@@ -9,7 +9,7 @@ import "./ScrollToButton.scss";
 
 const ScrollToButton = ({ className, jumpToAnchor, jumpToAnchorText, color, size, spaced, target }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const buttonAction = jumpToAnchor ? useSmoothScrollTo(jumpToAnchor) : () => navigate(target);
+  const buttonAction = jumpToAnchor ? useSmoothScrollTo(jumpToAnchor, {offset: -150}) : () => navigate(target);
   // className={clsx("dropdown-item", { active: key === langKey })}
   return (
     <Button size={size} variant={color} color="primary" className={clsx("px-3 mr-1 text-primary btn-rounded font-weight-bold", { "spaced": spaced }, className)} onClick={buttonAction}>

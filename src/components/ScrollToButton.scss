@@ -5,3 +5,9 @@
     width: 60px;
     height: 60px;
 }
+
+.jumbo-btn.variable-mgn {
+    @media (max-width: 950px) {
+        margin-left: 0 !important;
+    }
+}
