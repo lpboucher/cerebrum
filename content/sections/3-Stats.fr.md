@@ -4,7 +4,7 @@ anchor: "Santé Mentale"
 anchorId: "mental"
 inNavbar: false
 inFooter: false
-header: "Santé Mentale"
+header: "Toi, moi et la santé mentale"
 sections: [
     {
         header: "Au début, il s’agissait de sensibiliser…",

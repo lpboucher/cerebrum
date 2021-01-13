@@ -19,6 +19,7 @@ const Contact = ({ className, frontmatter }) => {
   const [formFields, setFormFields] = useState({});
   const [validated, setValidated] = useState(false);
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   if (!frontmatter) {
     return null;
@@ -53,7 +54,10 @@ const Contact = ({ className, frontmatter }) => {
           ...formFields
         })
       })
-        .then(() => setMessage("Thank you for submitting your details"))
+        .then(() => {
+            setSubmitted(true);
+            setMessage("Thank you for submitting your details");
+        })
         .catch(() => setMessage("Oups, it looks like something went wrong..."));
     } else {
       setMessage("Please fill in all information")
@@ -113,11 +117,11 @@ const Contact = ({ className, frontmatter }) => {
               />
             </Form.Group>
             {message !== "" &&
-              <Form.Text id="formMessage" className="mb-5 text-danger">
+              <Form.Text id="formMessage" className="mb-5">
                 {message}
               </Form.Text>
             }
-            <Button type="submit" size="xl" variant="success" className="btn-rounded font-weight-bold">{cta}</Button>
+            <Button disabled={submitted} type="submit" size="xl" variant="success" className="btn-rounded font-weight-bold">{cta}</Button>
           </Form>
         </Col>
       </Row>

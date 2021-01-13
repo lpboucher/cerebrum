@@ -3,7 +3,7 @@ isActive: false
 anchor: "Notre équipe"
 anchorId: "team"
 inNavbar: false
-inFooter: true
+inFooter: false
 header: "Notre équipe d'experts"
 subheader: "Our team of experts are here for you."
 team: [

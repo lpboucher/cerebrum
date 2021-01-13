@@ -7,6 +7,6 @@ inFooter: true
 header: "Contactez-Nous"
 name: "Prénom & Nom:"
 number: "Numéro de téléphone:"
-email: "Addresse courriel:"
+email: "Adresse courriel:"
 cta: "Soumettre"
 ---
