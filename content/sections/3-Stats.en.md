@@ -34,7 +34,7 @@ sections: [
             {
                 number: "50%",
                 explanation: "About <strong>50% of the population</strong> will have or will have had a mental illness by the age of 40.",
-                link: "https://www.mentalhealthcommission.ca/sites/default/files/2016- 06/Investing_in_Mental_Health_FINAL_Version_ENG.pdf"
+                link: "https://www.mentalhealthcommission.ca/sites/default/files/2016-06/Investing_in_Mental_Health_FINAL_Version_ENG.pdf"
             }
         ]
     },
