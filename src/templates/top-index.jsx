@@ -39,6 +39,7 @@ export const query = graphql`
           brandLogo
           brandName
           contactCta
+          contactMethod
           content
           copyright
           cta
