@@ -64,13 +64,14 @@ const Contact = ({ className, frontmatter }) => {
     }
   };
 
-  const { anchorId, header, subheader, name, number, cta, email } = frontmatter;
+  const { anchorId, header, subheader, contactMethod, name, number, cta, email } = frontmatter;
 
   return (
     <PageSection className={className} id={anchorId}>
       <Row className="align-items-center justify-content-center">
         <SectionHeader header={header} subheader={subheader} centered/>
         <Underline color="success" />
+        <p className="text-regular text-center mx-lg-5 px-lg-5">{contactMethod}</p>
       </Row>
       <Row className="contact align-items-center justify-content-center">
         <Col md={8} className="text-center">
