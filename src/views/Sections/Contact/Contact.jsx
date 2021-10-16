@@ -71,7 +71,7 @@ const Contact = ({ className, frontmatter }) => {
       <Row className="align-items-center justify-content-center">
         <SectionHeader header={header} subheader={subheader} centered/>
         <Underline color="success" />
-        <p className="text-regular text-center mx-lg-5 px-lg-5">{contactMethod}</p>
+        <p className="w-100 text-regular text-center mx-lg-5 px-lg-5">{contactMethod}</p>
       </Row>
       <Row className="contact align-items-center justify-content-center">
         <Col md={8} className="text-center">
